@@ -1,4 +1,7 @@
 PlaceCage::Application.routes.draw do
+  # match '/g/:width/:height' => 'image#showGray'
+  match '/:width/:height' => 'image#show'
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
