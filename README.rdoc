@@ -1,7 +1,6 @@
 == PlaceCage
 
 === To Do
-- analytics
 - cache directives
 - gallery of source images
 - ability to pick specific images
