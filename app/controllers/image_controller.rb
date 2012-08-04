@@ -1,3 +1,5 @@
+require 'RMagick'
+
 class ImageController < ApplicationController
 	before_filter :check_sizes, :only => [:show, :show_gray, :show_crazy]
 
