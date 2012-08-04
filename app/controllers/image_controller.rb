@@ -13,7 +13,7 @@ private
 	def check_sizes
 		@width = params[:width].to_i
 		@height = params[:height].to_i
-		return render :nothing => true, :status => 400 if @height == nil || @width == nil || @height == 0 || @width == 0
+		return render :nothing => true, :status => 400 if @height == nil || @width == nil || @height < 1 || @width < 1
 		return render :nothing => true, :status => 403 if @height > 2000 || @width > 2000
 	end
 
