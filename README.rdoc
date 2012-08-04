@@ -1,5 +1,4 @@
 == PlaceCage
 
 === To Do
-- limit max size (400 if too big)
 - FIND MORE IMAGES OF NIC CAGE
