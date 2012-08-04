@@ -1,19 +1,20 @@
 class ImageController < ApplicationController
 	def show
-		filename = get_image_filename(params[:width], params[:height])
-		image = Magick::Image.read(filename).first
-		response.headers["Content-Type"] = image.mime_type
-		render :text => image.to_blob
+		return_image(params,false)
 	end
 
 	def show_gray
-		filename = get_image_filename(params[:width], params[:height], true)
+		return_image(params,true)
+	end
+
+private
+	def return_image(params, grayscale=false)
+		filename = get_image_filename(params[:width], params[:height], grayscale)
 		image = Magick::Image.read(filename).first
 		response.headers["Content-Type"] = image.mime_type
 		render :text => image.to_blob
 	end
 
-private
 	def get_image_filename(width, height, grayscale=false)
 		filename = Rails.root.join('images','generated',grayscale ? 'grayscale' : 'color', "#{width}x#{height}.jpg")
 		return filename if FileTest.exists?(filename)
