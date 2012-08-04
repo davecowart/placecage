@@ -1,7 +1,8 @@
 == PlaceCage
 
 === To Do
-- home page
 - analytics
 - cache directives
+- gallery of source images
+- ability to pick specific images
 - FIND MORE IMAGES OF NIC CAGE
