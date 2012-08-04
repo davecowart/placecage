@@ -1,6 +1,5 @@
 == PlaceCage
 
 === To Do
-- pull random file
-- save copy of generated file for future calls
+- limit max size (400 if too big)
 - FIND MORE IMAGES OF NIC CAGE
