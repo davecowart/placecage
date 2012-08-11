@@ -6,6 +6,7 @@ gem 'rails', '3.2.6'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 gem 'rmagick', :require => 'RMagick'
+gem 'newrelic_rpm'
 
 group :development, :test do
 	gem 'sqlite3'
