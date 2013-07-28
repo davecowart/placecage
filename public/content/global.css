@@ -1,3 +1,25 @@
-.container {
-	margin-top:50px;
+body {
+	font-family: Helvetica, Arial, Sans-Serif;
+	color: #333;
+}
+
+.container, .footer {
+	width: 960px;
+	margin: 0 auto;
+	overflow: auto;
+}
+
+.intro {
+	width: 450px;
+	float: left;
+	margin-right: 14px;
+}
+
+.column {
+	float: left;
+	margin-right: 5px;
+}
+
+.footer {
+	font-size: 12px;
 }
