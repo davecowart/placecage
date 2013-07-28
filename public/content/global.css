@@ -15,6 +15,10 @@ body {
 	margin-right: 14px;
 }
 
+.intro p {
+	font-size: 12px;
+}
+
 .column {
 	float: left;
 	margin-right: 5px;
