@@ -7,6 +7,7 @@ gem 'rails', '3.2.13'
 
 gem 'rmagick', :require => 'RMagick'
 gem 'newrelic_rpm'
+gem 'unicorn'
 
 group :development, :test do
 	gem 'sqlite3'
