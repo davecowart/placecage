@@ -4,14 +4,17 @@ class ImageController < ApplicationController
 	before_filter :check_sizes, :only => [:show, :show_gray, :show_crazy]
 
 	def show
+		Gabba::Gabba.new("UA-42448491-1", "placecage.com").event("Images", "Show", "Size", "#{@width*@height}", true)
 		return_image(@width,@height)
 	end
 
 	def show_gray
+		Gabba::Gabba.new("UA-42448491-1", "placecage.com").event("Images", "ShowGray", "Size", "#{@width*@height}", true)
 		return_image(@width,@height,:grayscale)
 	end
 
 	def show_crazy
+		Gabba::Gabba.new("UA-42448491-1", "placecage.com").event("Images", "ShowCrazy", "Size", "#{@width*@height}", true)
 		return_image(@width,@height,:crazy)
 	end
 
