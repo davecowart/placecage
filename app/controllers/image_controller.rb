@@ -7,6 +7,7 @@ class ImageController < ApplicationController
 		gabba = Gabba::Gabba.new("UA-33854875-1", "placecage.com")
 		gabba.event("Images", "Show", "Size", "#{@width*@height}", true)
 		gabba.page_view("Show", "#{@width}/#{@height}")
+    expires_in 1.year, :public => true
 		return_image(@width,@height)
 	end
 
@@ -14,6 +15,7 @@ class ImageController < ApplicationController
 		gabba = Gabba::Gabba.new("UA-33854875-1", "placecage.com")
 		gabba.event("Images", "ShowGray", "Size", "#{@width*@height}", true)
 		gabba.page_view("ShowGray", "g/#{@width}/#{@height}")
+    expires_in 1.year, :public => true
 		return_image(@width,@height,:grayscale)
 	end
 
@@ -21,6 +23,7 @@ class ImageController < ApplicationController
 		gabba = Gabba::Gabba.new("UA-33854875-1", "placecage.com")
 		gabba.event("Images", "ShowCrazy", "Size", "#{@width*@height}", true)
 		gabba.page_view("ShowCrazy", "c/#{@width}/#{@height}")
+    expires_in 1.year, :public => true
 		return_image(@width,@height,:crazy)
 	end
 
