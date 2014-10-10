@@ -30,7 +30,7 @@ class ImageController < ApplicationController
   def show_gif
 		gabba = Gabba::Gabba.new("UA-33854875-1", "placecage.com")
 		gabba.event("Images", "ShowGif", "Size", "#{@width*@height}", true)
-		gabba.page_view("ShowGif", "c/#{@width}/#{@height}")
+		gabba.page_view("ShowGif", "gif/#{@width}/#{@height}")
     expires_in 1.year, :public => true
     return_gif(@width,@height)
   end
