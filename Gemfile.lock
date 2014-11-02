@@ -2,6 +2,7 @@ GEM
   remote: https://rubygems.org/
   specs:
     gabba (1.0.1)
+    newrelic_rpm (3.9.6.257)
     rack (1.5.2)
     rack-protection (1.5.3)
       rack
@@ -17,5 +18,6 @@ PLATFORMS
 
 DEPENDENCIES
   gabba
+  newrelic_rpm
   rmagick
   sinatra
