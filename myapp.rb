@@ -71,6 +71,8 @@ private
     generated_filename = File.join(settings.generated_images_folder, *path)
 		return generated_filename if FileTest.exists?(generated_filename)
 
+    puts "Getting info for #{filename}"
+
     sizeinfo = `gifsicle --sinfo #{filename} | grep 'logical screen'`
     puts sizeinfo
     matches = /\s(\d+)x(\d+)/.match(sizeinfo)
