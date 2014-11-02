@@ -64,7 +64,7 @@ private
 
   def get_gif_filename(desired_width, desired_height)
     original_path = ['gifs', '*.gif']
-    filename = Dir.glob(File.join(settings.generated_images_folder, *original_path)).sample
+    filename = Dir.glob(File.join(settings.images_folder, *original_path)).sample
 
     dimensions = "#{desired_width.to_i}x#{desired_height.to_i}"
     path = ['gifs',"#{dimensions}.gif"]
