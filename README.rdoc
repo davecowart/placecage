@@ -3,8 +3,15 @@
 http://www.placecage.com
 
 === To Do
-- cache directives
 - match images based on landscape/portrait
 - gallery of source images
 - ability to pick specific images
 - FIND MORE IMAGES OF NIC CAGE
+
+=== Multi-buildpack
+
+Now uses the Heroku-backed fork of Multi-buildpack
+
+```
+heroku config:set BUILDPACK_URL=http://hello.heroku.com/e/36622/oku-heroku-buildpack-multi-git/2rc718/432678395
+```
