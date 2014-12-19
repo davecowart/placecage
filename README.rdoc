@@ -1,12 +1,11 @@
-== PlaceCage
+== FillFerrell
 
-http://www.placecage.com
+http://www.fillferrell.com
 
 === To Do
-- match images based on landscape/portrait
-- gallery of source images
-- ability to pick specific images
-- FIND MORE IMAGES OF NIC CAGE
+- Find images of Will Ferrell
+- Gallery of source images
+- Ability to pick specific images
 
 === Multi-buildpack
 
