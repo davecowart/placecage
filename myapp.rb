@@ -48,7 +48,7 @@ private
 		width = matches[1].to_i
 		height = matches[2].to_i
     raise error 'Bad Request' if height == nil || width == nil || height < 1 || width < 1
-    raise error 'Too Large' if height > 2000 || width > 2000
+    raise error 'Too Large' if height > 3500 || width > 3500
 	end
 
 	def return_image(width, height, *args)
