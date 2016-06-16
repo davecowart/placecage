@@ -1,3 +1,5 @@
+I pulled the code to get me started from Dave Cowart's github repo for place cage.  Much thanks to him and MIT!
+
 The MIT License (MIT)
 Copyright (c) 2013 David Cowart
 
