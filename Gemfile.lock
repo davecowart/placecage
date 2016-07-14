@@ -1,40 +1,14 @@
 GEM
   remote: https://rubygems.org/
   specs:
-    addressable (2.3.8)
     daemons (1.2.3)
-    domain_name (0.5.24)
-      unf (>= 0.0.5, < 1.0.0)
     eventmachine (1.0.7)
-    excon (0.45.3)
     gabba (1.0.1)
-    heroku (3.39.1)
-      heroku-api (>= 0.3.19)
-      launchy (>= 0.3.2)
-      multi_json (>= 1.10)
-      netrc (>= 0.10.0)
-      rest-client (>= 1.6.0)
-      rubyzip (>= 0.9.9)
-    heroku-api (0.3.23)
-      excon (~> 0.44)
-      multi_json (~> 1.8)
-    http-cookie (1.0.2)
-      domain_name (~> 0.5)
-    launchy (2.4.3)
-      addressable (~> 2.3)
-    mime-types (2.6.1)
-    multi_json (1.11.1)
-    netrc (0.10.3)
     newrelic_rpm (3.12.1.298)
     rack (1.6.4)
     rack-protection (1.5.3)
       rack
-    rest-client (1.8.0)
-      http-cookie (>= 1.0.2, < 2.0)
-      mime-types (>= 1.16, < 3.0)
-      netrc (~> 0.7)
     rmagick (2.15.2)
-    rubyzip (1.1.7)
     sinatra (1.4.6)
       rack (~> 1.4)
       rack-protection (~> 1.4)
@@ -44,17 +18,19 @@ GEM
       eventmachine (~> 1.0)
       rack (~> 1.0)
     tilt (2.0.1)
-    unf (0.1.4)
-      unf_ext
-    unf_ext (0.0.7.1)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
   gabba
-  heroku
   newrelic_rpm
   rmagick
   sinatra
   thin
+
+RUBY VERSION
+   ruby 2.3.1p112
+
+BUNDLED WITH
+   1.12.5
