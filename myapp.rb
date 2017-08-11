@@ -2,7 +2,7 @@ set :public_folder, File.dirname(__FILE__) + '/public'
 set :generated_images_folder, File.dirname(__FILE__) + '/images/generated'
 set :images_folder, File.dirname(__FILE__) + '/images/source'
 set :static_cache_control, [:public, :max_age => 300]
-gabba = Gabba::Gabba.new("UA-33854875-1", "placecage.com")
+gabba = Gabba::Gabba.new("UA-37788508-2", "auto")
 
 before do
   pass if request.path. == '/'
