@@ -29,28 +29,28 @@ get '/' do
   send_file File.join(settings.public_folder, domain, 'index.html')
 end
 
-get '/:width/:height' do
+get '/:width/:height', '/:width/:height/' do
   width = params[:width].to_i
   height = params[:height].to_i
   gabba.page_view("Show", "#{width}/#{height}")
   return_image(domain,width,height)
 end
 
-get '/c/:width/:height' do
+get '/c/:width/:height', '/c/:width/:height/' do
   width = params[:width].to_i
   height = params[:height].to_i
   gabba.page_view("ShowCrazy", "c/#{width}/#{height}")
   return_image(domain,width,height,:crazy)
 end
 
-get '/g/:width/:height' do
+get '/g/:width/:height', '/g/:width/:height/' do
   width = params[:width].to_i
   height = params[:height].to_i
   gabba.page_view("ShowGray", "g/#{width}/#{height}")
   return_image(domain,width,height,:grayscale)
 end
 
-get '/gif/:width/:height' do
+get '/gif/:width/:height', '/gif/:width/:height/' do
   width = params[:width].to_i
   height = params[:height].to_i
   gabba.page_view("ShowGif", "gif/#{width}/#{height}")
