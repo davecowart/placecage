@@ -6,8 +6,11 @@ gabba = nil
 domain = nil
 
 before do
-  #domain = request.host.split('.').reverse[1]
-  domain = request.host.split('.')[0]
+  if domain.include?('herokuapp')
+    domain = request.host.split('.')[0]
+  else
+    domain = request.host.split('.').reverse[1]
+  end
 
   #set gabba
   ga_index = 1
