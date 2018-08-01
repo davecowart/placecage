@@ -6,7 +6,8 @@ gabba = nil
 domain = nil
 
 before do
-  domain = request.host.split('.').reverse[1]
+  #domain = request.host.split('.').reverse[1]
+  domain = request.host.split('.')[0]
 
   #set gabba
   ga_index = 1
