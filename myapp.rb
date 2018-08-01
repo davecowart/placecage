@@ -6,7 +6,7 @@ gabba = nil
 domain = nil
 
 before do
-  if domain.include?('herokuapp')
+  if request.host.include?('herokuapp')
     domain = request.host.split('.')[0]
   else
     domain = request.host.split('.').reverse[1]
