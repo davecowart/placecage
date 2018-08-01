@@ -1,9 +1,17 @@
 == PlaceCage
 
-http://www.placecage.com
+https://www.placecage.com
+
+== FillMurray
+
+https://www.fillmurray.com
+
+== StevenSegallery
+
+https://www.stevensegallery.com
 
 === To Do
-- FIND MORE IMAGES OF NIC CAGE
+- FIND MORE IMAGES
 
 === Multi-buildpack
 
