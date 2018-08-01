@@ -13,10 +13,9 @@ https://www.stevensegallery.com
 === To Do
 - FIND MORE IMAGES
 
-=== Multi-buildpack
-
-Now uses the Heroku-backed fork of Multi-buildpack
+=== Buildpacks
 
 ```
-heroku config:set BUILDPACK_URL=http://hello.heroku.com/e/36622/oku-heroku-buildpack-multi-git/2rc718/432678395
+heroku/ruby
+https://github.com/jc4p/heroku-buildpack-gifsicle.git
 ```
