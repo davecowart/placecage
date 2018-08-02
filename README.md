@@ -1,19 +1,19 @@
-== PlaceCage
+## PlaceCage
 
 https://www.placecage.com
 
-== FillMurray
+## FillMurray
 
 https://www.fillmurray.com
 
-== StevenSegallery
+## StevenSegallery
 
 https://www.stevensegallery.com
 
-=== To Do
+### To Do
 - FIND MORE IMAGES
 
-=== Buildpacks
+### Buildpacks
 
 ```
 heroku/ruby
