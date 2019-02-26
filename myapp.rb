@@ -36,6 +36,7 @@ end
 get '/:width/:height', '/:width/:height/' do
   width = params[:width].to_i
   height = params[:height].to_i
+  gabba.identify_user(cookies[:__utma], cookies[:__utmz])
   gabba.page_view("Show", "#{width}/#{height}")
   return_image(domain,width,height)
 end
@@ -43,6 +44,7 @@ end
 get '/c/:width/:height', '/c/:width/:height/' do
   width = params[:width].to_i
   height = params[:height].to_i
+  gabba.identify_user(cookies[:__utma], cookies[:__utmz])
   gabba.page_view("ShowCrazy", "c/#{width}/#{height}")
   return_image(domain,width,height,:crazy)
 end
@@ -50,6 +52,7 @@ end
 get '/g/:width/:height', '/g/:width/:height/' do
   width = params[:width].to_i
   height = params[:height].to_i
+  gabba.identify_user(cookies[:__utma], cookies[:__utmz])
   gabba.page_view("ShowGray", "g/#{width}/#{height}")
   return_image(domain,width,height,:grayscale)
 end
@@ -57,6 +60,7 @@ end
 get '/gif/:width/:height', '/gif/:width/:height/' do
   width = params[:width].to_i
   height = params[:height].to_i
+  gabba.identify_user(cookies[:__utma], cookies[:__utmz])
   gabba.page_view("ShowGif", "gif/#{width}/#{height}")
   return_gif(domain,width,height)
 end
