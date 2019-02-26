@@ -19,7 +19,7 @@ GEM
     multi_json (1.13.1)
     mustermann (1.0.2)
     newrelic_rpm (5.3.0.346)
-    rack (2.0.5)
+    rack (2.0.6)
     rack-protection (2.0.3)
       rack
     rmagick (2.16.0)
@@ -53,6 +53,7 @@ DEPENDENCIES
   foreman
   gabba
   newrelic_rpm
+  rack (>= 2.0.6)
   rmagick
   sinatra
   sinatra-contrib
